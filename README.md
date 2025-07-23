@@ -32,14 +32,7 @@ A responsive and modern web application built using **HTML**, **CSS**, and **Jav
 
 You can see the project live here:  
 https://osama-cs-dev.github.io/Electric_Car/welcome.html
-*(Replace the above link with your actual GitHub Pages link once published)*
 
 ---
 
-## 📸 Screenshots
 
-> _You can add screenshots of the homepage, comparison page, charging stations map, etc._
-
-```markdown
-![Homepage](screenshots/homepage.png)
-![Comparison Page](screenshots/compare.png)
