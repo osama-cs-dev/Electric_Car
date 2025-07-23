@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.bg-img{
+     
+    background: url("image/bk.webp") no-repeat;
+    background-size:cover ;
+    height: 50vh;
+    
+}
+.container-fluid{
+    background-color: black;
+}
+

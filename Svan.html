@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>electric car</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="svan.css">
+<link rel="stylesheet" href="tariq.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            
+    <div class="container-fluid">
+      <a class="navbar-brand" href="welcome.html">Welcome Page</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="tariq.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Home
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+              <li><a class="dropdown-item" href="mowaia.html">Cars</a></li>
+              <li><a class="dropdown-item" href="tariq.html">Charging Station</a></li>
+              <li><a class="dropdown-item" href="VS.html">VS</a></li>
+              <li><a class="dropdown-item" href="news.html">News</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="news.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Charging Station
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+              <li><a class="dropdown-item" href="https://maps.app.goo.gl/WVDh5gBrCF6h6c6u6">Tiqram</a></li>
+              <li><a class="dropdown-item" href="https://maps.app.goo.gl/WZKavcsTWsmPVTBt9">Park and charge</a></li>
+              <li><a class="dropdown-item" href="https://maps.app.goo.gl/zBcSWjy6FJf9v4kD6">ABB</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="news.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             News
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Fvan.html">Fvan</a></li>
+              <li><a class="dropdown-item" href="Svan.html">Svan</a></li>
+              <li><a class="dropdown-item" href="VS.html">2024 Cars</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="news.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             VS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="https://youtu.be/tezLYZHWkK4?si=lbPlgAE1U58DqIsP">Tesla vs BYD</a></li>
+              <li><a class="dropdown-item" href="https://youtu.be/diboDNTyawc?si=e6AHb_jov0jnVv-f">2024 Cars</a></li>
+              <li><a class="dropdown-item" href="https://youtu.be/ChBehnCUGKU?si=loOeJXXPy5ma6A7Z">IONIQ 5</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex navbar-dark">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" style="color: white; border: 1px solid white;">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav><!-- فقرة مشابهة -->
+  <div class="headline">
+    This electric Ford Transit rival is called the <br> ‘SuperVan’ and it's coming to the UK
+</div>
+
+
+  <!-- معرض الصور -->
+  <div class="gallery">
+    <img src="image/Sv1.Jpg" onclick="openModal(); currentSlide(1)" class="thumbnail">
+    <img src="image/Sv2.JPG" onclick="openModal(); currentSlide(2)" class="thumbnail">
+    <img src="image/Sv3.jpg" onclick="openModal(); currentSlide(3)" class="thumbnail">
+    <img src="image/Sv4.jpg" onclick="openModal(); currentSlide(4)" class="thumbnail">
+  </div>
+
+  <!-- نافذة عرض الصورة المكبرة -->
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <!-- الصور داخل العرض -->
+      <div class="mySlides">
+        <img src="image/Sv1.Jpg" class="modal-image">
+      </div>
+
+      <div class="mySlides">
+        <img src="image/Sv2.JPG" class="modal-image">
+      </div>
+
+      <div class="mySlides">
+        <img src="image/Sv3.jpg" class="modal-image">
+      </div>
+
+      <div class="mySlides">
+        <img src="image/Sv4.jpg" class="modal-image">
+      </div>
+
+      <!-- أزرار الأسهم -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+  </div>
+
+  <!-- ربط ملف JavaScript -->
+  <script src="script.js"></script>
+
+
+  <div class="content">
+    <p>
+        The Farizon SV is coming to the UK. Note that ‘SV’ stands for the attention-catching ‘SuperVan’. No, this isn't another one of Ford's wildly overpowered wonders.
+    </p>
+
+    <p>
+        Farizon is an emergent Chinese-built commercial vehicle maker, and this Supervan is for production, unlike those mad Transits.
+    </p>
+
+    <p>
+        There are notable little quirks to the Farizon version, like the design which does away with the B-pillar (apparently making it more versatile for customer configurations) and a front end which appears to draws inspiration from industry underdog, the Fiat Multipla.
+    </p>
+
+    <p>
+        The modular platform will initially feature a choice of two battery packs – 67kWh or 83kWh – with a 106kWh option to follow. We've been told there could be as many as 342 miles of city range (WLTP), but whether it's a comparatively wildly overpowered Transit rival is yet to be understood – we suspect it's highly unlikely to compete with the 2023 Pikes Peak record-setter.
+    </p>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>about us:</h4>
+            <p>mmmmmmmmmmmm</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>اتصل بنا</h4>
+            <ul>
+                <li>mobile: 123-456-789</li>
+                <li>gmail: info@website.com</li>
+            </ul>
+        </div>
+
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>   
+            <a href="#"><i class="fab fa-twitter"></i></a>   
+            <a href="#"><i class="fab fa-instagram"></i></a>   
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 جميع الحقوق محفوظة. تم تطوير الموقع بواسطة <a href="#">اسم المطور</a></p>
+    </div>
+</footer>
+<script>
+  const toggleMenu = document.querySelector('.toggle-menu');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggleMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+  });
+</script>
+
+
+</body>

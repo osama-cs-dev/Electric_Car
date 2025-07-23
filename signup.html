@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signup.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="mowaia.html">Electric Car</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="mowaia.html">Home</a></li>
+            <li><a href="tariq.html">Charging Stations</a></li>
+            <li><a href="VS.html">VS</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="toggle-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Left side with image -->
+        <div class="left-side">
+            <!-- You can add an image here if needed -->
+            <!-- <img src="your-image.jpg" alt="Sign Up Image"> -->
+        </div>
+        
+        <!-- Right side with sign-up form -->
+        <div class="right-side">
+            <div class="signup-box">
+                <h2>Sign Up</h2>
+                <form id="signupForm">
+                    <div class="input-box">
+                        <input type="text" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+                    </div>
+                    <div class="submit-box">
+                        <button type="submit"><a href="VS.html">Sign Up</a></button>
+                    </div>
+                    <div class="footer">
+                        <p style="color: white;">Already have an account? <a href="login.html">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggleMenu = document.querySelector('.toggle-menu');
+        const navLinks = document.querySelector('.nav-links');
+    
+        toggleMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+    <script>
+        // Handle form submission (optional for future use)
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            alert('Form submitted successfully!'); // You can replace this with actual form submission code
+        });
+    </script>
+</body>
+</html>

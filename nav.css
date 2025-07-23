@@ -1,0 +1,247 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color for the body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Basic styles for the dropdown */
+.nav-links li {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  width: 150px;
+  padding: 10px 20px;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-links a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+}
+
+
+/* Navbar styles */
+nav {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+nav:hover {
+  background-color: rgb(0, 0, 0); /* Slightly darker on hover */
+}
+
+/* Logo styling */
+nav .logo a {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Arial', sans-serif;
+  transition: color 0.3s ease;
+}
+
+nav .logo a:hover {
+  color: #007BFF; /* Highlight on hover */
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  padding: 5px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #007BFF; /* Highlight background */
+  color: white;
+}
+
+/* Toggle menu for responsive design */
+.toggle-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.toggle-menu span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: rgb(0, 0, 0);
+      width: 200px;
+      border-radius: 8px;
+      padding: 10px;
+  }
+
+  .nav-links.show {
+      display: flex;
+  }
+
+  .toggle-menu {
+      display: flex;
+  }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* محتوى الصفحة */
+  .content {
+    padding: 20px;
+    min-height: 80%; /* يضمن أن المحتوى يحتل المساحة المتبقية */
+  }
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    flex: 1 1 250px;
+    padding: 20px;
+  }
+  
+  .footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ecf0f1;
+  }
+  
+  .footer-section p, .footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-section a {
+    color: #ecf0f1;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  
+  .footer-bottom a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-links {
+    text-align: center;
+    margin-top: 70px;
+    margin-right: 50px;
+  }
+  
+  .social-icon {
+    font-size: 39px;
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* تأثير عند تغيير اللون والحجم */
+
+  }
+  
+  .social-icon:hover {
+    color: #3498db;
+  }
+  
+  /* تنسيق لأيقونات الفيسبوك، تويتر، والانستغرام */
+  .social-links a i {
+    transition: color 0.3s ease;
+  }
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        padding: 15px 20px;
+    }
+}

@@ -1,0 +1,159 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #003244; /* لون مشابه للأزرق الداكن */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .headline {
+    font-size: 36px; /* حجم الخط */
+    font-weight: bold;
+    color: #003244; /* لون النص */
+    text-align: left; /* محاذاة إلى اليسار */
+    line-height: 1.3; /* تباعد بين الأسطر */
+    margin: 50px 20px; /* مسافة من الأعلى والجوانب */
+  }
+  
+  .headline span {
+    font-style: italic;
+    color: #003244; /* نفس اللون */
+  }
+  
+  /* ضبط الجسم الرئيسي للصفحة */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6; /* تباعد الأسطر */
+  color: #333333; /* لون النص */
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* ضبط الفقرة */
+.content {
+  max-width: 800px;
+  margin: 50px auto; /* توسيط المحتوى */
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content p {
+  margin-bottom: 20px; /* مسافة بين الفقرات */
+  font-size: 16px;
+  text-align: justify;
+}
+
+/* ضبط الروابط */
+.content a {
+  color: #0078a6; /* لون الرابط */
+  text-decoration: underline; /* تحتها خط */
+  font-weight: bold;
+}
+
+.content a:hover {
+  color: #004466; /* تغيير لون الرابط عند التحريك */
+}
+
+/* تنسيق النص الغليظ */
+.content strong {
+  font-weight: bold;
+}
+
+
+/* تنسيق معرض الصور */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.thumbnail {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  
+  transition: 0.5s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(0.9);
+}
+
+/* نافذة عرض الصورة */
+.modal {
+  display: none; /* مخفية في البداية */
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 90%;
+}
+
+.modal-image {
+  width: 100%;  /* اجعل العرض 100% من العرض المتاح */
+  height:auto; /* اجعل الارتفاع 100% من الارتفاع المتاح */
+  object-fit: contain;  /* حافظ على نسب العرض والارتفاع للصورة */
+  max-width: 800px;  /* تحديد أقصى عرض للصورة */
+  max-height: 600px; /* تحديد أقصى ارتفاع للصورة */
+  margin: auto;
+}
+
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.prev:hover, .next:hover {
+  color: #f1f1f1;
+}
+
+
+  
