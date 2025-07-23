@@ -31,7 +31,7 @@ A responsive and modern web application built using **HTML**, **CSS**, and **Jav
 ## 🌐 Live Demo
 
 You can see the project live here:  
-🔗 [GitHub Pages Link](https://your-username.github.io/electric-cars-project)
+🔗 [GitHub Pages Link](https://osama-cs-dev.github.io/Electric_Car/)
 
 *(Replace the above link with your actual GitHub Pages link once published)*
 
